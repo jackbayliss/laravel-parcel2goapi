@@ -61,9 +61,9 @@ class Parcel2GoAPI
     
     
         $data = array('CollectionAddress'=> array('Country' => config('parcel2goapi.from_address'),), 'DeliveryAddress' => array("Country" => $this->tocountry), 'Parcels' => 
-        [
+        
             $this->parcels
-        ] 
+       
     );
         
         $data = json_encode($data);
