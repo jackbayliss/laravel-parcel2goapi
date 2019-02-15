@@ -1,0 +1,27 @@
+{
+    "name": "jackbayliss/laravel-parcel2goapi",
+    "description": "Parcel 2 Go API wrapper for laravel.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jack Bayliss",
+            "email": "jack@jackbayliss.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "keywords" : [
+        "laravel",
+        "php",
+        "parcel2go",
+        "parcel2go api"
+    ],
+    "require": {
+        "php": ">=5.6.0",
+        "ext-curl": "*"
+    },
+    "autoload": { 
+        "psr-4": {
+        "jackbayliss\\Parcel2GoApi\\": "src/"
+    }
+}
+}
