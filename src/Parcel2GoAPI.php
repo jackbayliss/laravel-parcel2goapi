@@ -6,7 +6,7 @@ class Parcel2GoAPI
 {
     protected $accesstoken;
     protected $tocountry; 
-    protected $quotes; 
+    public $quotes; 
     protected $parcels; 
 
     public function __construct(){
