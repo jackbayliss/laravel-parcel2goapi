@@ -14,6 +14,8 @@ Composer require the package into your laravel project.
 composer require jackbayliss/laravel-parcel2goapi
 ```
 
+> Note: If you're using Laravel >= 5.5, you can skip the registration of the service provider, as they are registered automatically. So no need to add it into your providers array.
+
 Then in your config folder, go into your app.php and add the below to the providers array.
 ```
 jackbayliss\Parcel2GoApi\Parcel2GoAPIServiceProvider::class,
@@ -54,6 +56,12 @@ $api->SetToCountry("GBR")->SetParcels($parcels)->GetQuote();
   $api->SetToCountry("GBR")->SetParcels($parcels)->GetQuote()->quotes
   ```
 
+  ## Authors
+  * Jack Bayliss - Initial work
+  
+ ## License
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/jackbayliss/laravel-parcel2goapi/blob/master/LICENSE) file for details
+  
   
   That's all folks 👍
   
