@@ -21,12 +21,15 @@ Then in your config folder, go into your app.php and add the below to the provid
 jackbayliss\Parcel2GoApi\Parcel2GoAPIServiceProvider::class,
 ```
 
-I would then recommend setting your `client_id`, and `client_secret` which can be found in vendor->jackbayliss->Config->config.php
+I would then recommend setting your `client_id`,`client_secret` and `from_address`  which can be found in vendor->jackbayliss->Config->config.php
+
+Bare in mind your from address is the country you are sending from, default it is set to the UK (GBR), so France would be FRA, Italy ITA etc.
+
 once these have been set you can then use the API.
 
 If you don't have the above, set up an account [here](https://www.parcel2go.com/login), then create your API credentials by going [here](https://www.parcel2go.com/myaccount/api).
 
-Once you've set your `client_id` and `client_secret` you're ready to use- simply do the below.
+Once you've set your `client_id`,`client_secret` and `from_address` you're ready to use- simply do the below.
 
 ```php
 $parcel = [array("Value" =>150 ,"Weight" =>2, "Length" =>9, "Width" => 8, "Height" => 1)];
