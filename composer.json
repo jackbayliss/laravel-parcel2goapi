@@ -23,5 +23,12 @@
         "psr-4": {
         "jackbayliss\\Parcel2GoApi\\": "src/"
     }
+},  
+"extra": {
+    "laravel": {
+        "providers": [
+            "jackbayliss\\Parcel2GoApi\\Parcel2GoAPIServiceProvider"
+        ]
+    }
 }
 }
